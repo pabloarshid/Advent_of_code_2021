@@ -1,7 +1,7 @@
-def chunks(lst, n):
-    """Yield successive n-sized chunks from lst."""
-    for i in range(0, len(lst)):
-        yield lst[i:i + n]
+# def chunks(lst, n):
+#     """Yield successive n-sized chunks from lst."""
+#     for i in range(0, len(lst)):
+#         yield lst[i:i + n]
 
 
 with open('input.txt') as my_file:
