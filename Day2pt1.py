@@ -1,18 +1,17 @@
-# def chunks(lst, n):
-#     """Yield successive n-sized chunks from lst."""
-#     for i in range(0, len(lst)):
-#         yield lst[i:i + n]
 
 
+# Read in data
 with open('input.txt') as my_file:
     testsite_array = my_file.readlines()
 
-
-arrayofnums = [z[:-1] for z in testsite_array]
+# create array without newline character
+arrayofinstructions = [z[:-1] for z in testsite_array]
 depth = 0
 hposition = 0
 
-for i in arrayofnums:
+# for loop through arrayofinstructions. first split the instruction into a tuple where first value is direction. Second is value;
+# if statment for different cases  
+for i in arrayofinstructions:
     x = i.split()
     if x[0] == 'forward':
         hposition = hposition + int(x[1])
